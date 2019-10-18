@@ -2,12 +2,12 @@ pipeline {
     agent any
     environment {
         BRANCH = 'master'
-        HELM_STATE_GIT_REPO = 'github.com/infracloudio/app-mono-helmstate.git'
+        HELM_STATE_GIT_REPO = 'github.com/madhav411/app-mono-helmstate.git'
         HELM_STATE_REPO = 'app-mono-helmstate'
         DOCKERHUB_HOOK_SECRET = "dockerhub-webhook-secret"
         //GIT = credentials('github-credentials')
-        GIT_USR = ""
-        GIT_PSW = ""
+        GIT_USR = "madhav411"
+        GIT_PSW = credentials('55662b57-abed-4e97-9818-2fcef8980880')
     }
 
     stages {
