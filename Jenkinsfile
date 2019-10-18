@@ -4,7 +4,7 @@ pipeline {
         BRANCH = 'master'
         HELM_STATE_GIT_REPO = 'github.com/madhav411/app-mono-helmstate.git'
         HELM_STATE_REPO = 'app-mono-helmstate'
-        DOCKERHUB_HOOK_SECRET = "dockerhub-webhook-secret"
+        DOCKERHUB_HOOK_SECRET = "docker_hub_webhook"
         //GIT = credentials('github-credentials')
         GIT_USR = "madhav411"
         GIT_PSW = credentials('Madhav_Github_Credentials')
