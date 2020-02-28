@@ -7,7 +7,7 @@ pipeline {
         DOCKERHUB_HOOK_SECRET = "docker_hub_webhook"
         //GIT = credentials('github-credentials')
         GIT_USR = "madhav411"
-        GIT_PSW = credentials('Madhav_Github_Credentials')
+        GIT_PSW = credentials('madhav_github_credentials')
     }
 
     stages {
